@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/neat.css">
+    <link rel="stylesheet" href="style/baidu.css">
+    <title>百度一下</title>
+</head>
+
+<body>
+    <header class="clearfix">
+        <!-- 顶部左侧 -->
+        <div class="left">
+            <a href="#" class="weather">
+                <span class="weather-area">北京：</span>
+                <span class="weather-icon"></span>
+                <span class="weather-temp">28℃</span>
+                <span class="weather-index">良</span>
+                <span class="weather-num">97</span>
+                <span>|</span>
+            </a>
+            <!-- 天气面板 -->
+            <div class="weather-panel">
+                <!-- 小三角 -->
+                <span class="triangle wp"></span>
+                <div class="panel-bar clearfix">
+                    <div class="panel-bar-left">
+                        <span>05月19日</span>
+                        <span>农历 四月十三</span>
+                        <a class="future" href="#">未来七天天气</a>
+                    </div>
+                    <div class="panel-bar-right">
+                        <span></span>
+                        <a class="weatherset" href="#">设置</a>
+                    </div>
+                </div>
+                <ul class="weatherlist clearfix">
+                    <li class="today">
+                        <span>今天(周四)</span>
+                        <span class="weathericon1"></span>
+                        <span>29℃</span>
+                        <span>晴</span>
+                        <span>微风</span>
+                    </li>
+                    <li>
+                        <span>明天(周五)</span>
+                        <span class="weathericon1"></span>
+                        <span>29℃</span>
+                        <span>晴</span>
+                        <span>微风</span>
+                    </li>
+                    <li>
+                        <span>后天(周六)</span>
+                        <span class="weathericon1"></span>
+                        <span>29℃</span>
+                        <span>晴</span>
+                        <span>微风</span>
+                    </li>
+                    <li>
+                        <span>周日</span>
+                        <span class="weathericon1"></span>
+                        <span>29℃</span>
+                        <span>晴</span>
+                        <span>微风</span>
+                    </li>
+                    <li>
+                        <span>周一</span>
+                        <span class="weathericon1"></span>
+                        <span>29℃</span>
+                        <span>晴</span>
+                        <span>微风</span>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class=" bl function">宝箱</a>
+            <a href="#" class=" bl changeskin">换肤</a>
+            <a href="#" class=" bl message">消息</a>
+        </div>
+        <!-- 顶部右侧 -->
+        <div class="right">
+            <a class="list" href="#">糯米</a>
+            <a class="list" href="#">新闻</a>
+            <a class="list" href="#">hao123</a>
+            <a class="list" href="#">地图</a>
+            <a class="list" href="#">视频</a>
+            <a class="list" href="#">贴吧</a>
+            <a href="#" class=" list username normal">3131fsa</a>
+            <a href="#" class=" list set normal">设置</a>
+            <a href="#" class=" list more normal">更多产品</a>
+            <div class="usermenu">
+                <span class="triangle up"></span>
+                <a href="#">我的VIP</a>
+                <a href="#">个人中心</a>
+                <a href="#">账号设置</a>
+                <a href="#">意见反馈</a>
+                <a href="#">退出</a>
+            </div>
+            <div class="userset">
+                <span class="triangle us"></span>
+                <a href="#">搜索设置</a>
+                <a href="#">高级搜索</a>
+                <a href="#">关闭预测</a>
+                <a href="#">搜素历史</a>
+            </div>
+        </div>
+    </header>
+    <div class="morelist">
+        <a href="#">更多产品</a>
+        <a href="#"><span class="music"></span>音乐</a>
+        <a href="#"><span class="picture"></span>图片</a>
+        <a href="#"><span class="know"></span>知道</a>
+        <a href="#"><span class="repo"></span>文库</a>
+        <a href="#"><span class="cwlist"></span>风云榜</a>
+        <a href="#"><span class="extend"></span>百度推广</a>
+        <a href="#" class="all">全部产品</a>
+    </div>
+    <!-- 换肤 -->
+    <div class="skin">
+        <div class="skinbar">
+        <div class="skinlist">
+            <a href="javascript:;">
+            <span>女神</span>
+            </a>
+            <a class="put" href="javascript:;">
+                <span></span>
+            <span>收起</span>
+            </a>
+        </div>
+        </div>
+        <ul class="skins">
+            <li><img class="skin1" src="image/skin/skin1.jpg"  alt=""></li>
+        </ul>
+    </div>
+    <article class="searchcontent">
+            <div id="search">
+                <div class="logo"><img src="image/bd_logo.png" alt=""></div>
+                <form class="form" action="#">
+                    <input type="text" class="input">
+                    <input type="submit" class="submit" value="百度一下">
+                    <span class="camera"></span>
+                </form>
+            </div>
+        </article>
+    <!-- 主要内容区域 -->
+    <section>
+        <!-- 新闻内容区域 -->
+        <article id="content">
+            <!-- 内容区域的导航 -->
+            <nav class="newsnav">
+                <ul>
+                    <li><a class="mine" href="javascript:;"><span></span>我的关注</a></li>
+                    <li class="active"><a href="javascript:;">推荐</a></li>
+                    <li><a href="javascript:;">导航</a></li>
+                    <li><a href="javascript:;">视频</a></li>
+                    <li><a href="javascript:;">购物</a></li>
+                </ul>
+                <div class="menu-icon"></div>
+            </nav>
+            <!-- 我关注的设置 -->
+            <div class="mylove">
+                <div class="mynav">
+                    <a href="#">
+                        <span class="myarrow"></span> 我的导航
+                        <span class="lovenum">(0)</span>
+                    </a>
+                </div>
+                <div class="myset">
+                    <a href="#">
+                        <span class="seticon"></span> 自定义
+                    </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- 推荐的新闻 -->
+            <div class="clearfix ">
+                <div id="suggest">
+                    <div id="tips">
+                        <span class="line"></span>
+                        <span class="tips-icon"></span>
+                        <span class="tips-content">以下内容根据您的兴趣推荐</span>
+                        <span class="line"></span>
+                    </div>
+                    <!-- 新闻内容 -->
+                    <ul class="newscontent">
+                        <li>
+                            <a href="#" class="listtitle limit">
+                                <span class="status"></span> 西班牙25人大名单:无托雷斯DC 皇马替补意外入选
+                            </a>
+                            <a href="#">
+                                <img src="./image/xibanya.jpg" alt="">
+                            </a>
+                            <strong class="subtitle">
+              <a href="#" class="">21CN游戏</a>
+            <span>05-18 09:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle"> 曝中国老板欲挖角巴神赴西甲 加盟巴萨同城死敌</a>
+                            <strong>
+              <a href="#" >搜狐体育</a>
+            <span>05-18 09:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle">
+                                <span class="status"></span> 车站惊现“僵尸车” 超长停车欠费两万</a>
+                            <strong>
+              <a href="#" >腾讯新闻</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle limit"> 男篮赴北仑第2轮集训 易建联周琦确定回归时间</a>
+                            <a href="#">
+                                <img src="./image/xibanya.jpg" alt="">
+                            </a>
+                            <strong class="subtitle">
+              <a href="#" >腾讯新闻</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle limit"> MVP≠最佳？库里呛声詹姆斯：习惯性忽视他</a>
+                            <a href="#">
+                                <img src="./image/kuli.jpg" alt="">
+                            </a>
+                            <strong class="subtitle">
+              <a href="#" >腾讯新闻</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle limit"> 工资少不要紧 5个实用方法让你照样有钱花</a>
+                            <a href="#">
+                                <img src="./image/youqianhua.jpg" alt="">
+                            </a>
+                            <strong class="subtitle">
+              <a href="#" >腾讯财经</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle"> 山村孩子学成回山亲手自建了一栋这样的房子，山人们沸腾了</a>
+                            <a href="#">
+                                <img src="image/fangzi1.jpg" alt="">
+                                <img src="image/fangzi2.jpg" alt="">
+                                <img src="image/fangzi3.jpg" alt="">
+                            </a>
+                            <strong>
+              <a href="#" >中国日报网</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle limit">  Linux将成为21世纪汽车主流操作系统</a>
+                            <a href="#">
+                                <img src="./image/linux.jpg" alt="">
+                            </a>
+                            <strong class="subtitle">
+                               <a href="#" >腾讯财经</a>
+                              <span>05-18 10:47</span>
+                            </strong>
+                        </li>
+                        <li>
+                            <a href="#" class="listtitle"> 马刺苦追一人五年 他却自掏300万加盟火箭</a>
+                            <a href="#">
+                                <img src="image/sikela1.jpg" alt="">
+                                <img src="image/sikela2.jpg" alt="">
+                                <img src="image/sikela3.jpg" alt="">
+                            </a>
+                            <strong>
+              <a href="#" >中国日报网</a>
+            <span>05-18 10:47</span>
+            </strong>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 热点新闻 -->
+                <div class="hotspot ">
+                    <div class="htitle">
+                        <a href="#" class="intime"><span>实时热点</span></a>
+                        <a href="#" class="change"><span class="changeicon"></span><span>换一换</span></a>
+                    </div>
+                    <ul class="hotspotlist">
+                        <li>
+                            <span></span><a href="#">大S二胎产子</a>
+                            <span class="newspot"></span>
+                        </li>
+                        <li>
+                            <span></span><a href="#">王毅同克里通电话</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">成都市代管简阳市</a>
+                            <span class="newspot"></span>
+                        </li>
+                        <li>
+                            <span></span><a href="#">日本关东地区地震</a>
+                            <span class="newspot"></span>
+                        </li>
+                        <li>
+                            <span></span><a href="#">促进通用航空业</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">山西铲车街头撞人</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">重庆疫苗案追踪</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">日首颗月面探测器</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">委内瑞拉举行军演</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">小偷制定工作计划</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">夜孔雀主题曲曝光</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">男子装上机械手臂</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">小伙痴迷核雕</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">学生宿舍办婚礼</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">郑恺魅力写真曝光</a>
+                        </li>
+                        <li>
+                            <span></span><a href="#">低价酒灌高端酒瓶</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="mylove">
+                <h1 class="itemh1">猜你喜欢</h1>
+                <ul class="loveitem">
+                    <li><a href="#"><span class="nuomi"></span>百度<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="jingdong"></span>京东商城<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="yihao"></span>1号店<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="suning"></span>苏宁易购<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="te"></span>唯品会<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="dang"></span>当当网<span class="rebate"></span></a></li>
+                    <li><a href="#"><span class="mu"></span>慕课网</a></li>
+                    <li><a href="#"><span class="yi"></span>网易云课堂</a></li>
+                    <li><a href="#"><span class="e"></span>gulp</a></li>
+                    <li><a href="#"><span class="e"></span>一点教程</a></li>
+                    <li><a href="#"><span class="e"></span>seajs</a></li>
+                    <li><a href="#"><span class="e"></span>gulp教程</a></li>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- 喜欢的视频 -->
+            <div class="mylove">
+                <ul class="vediolist">
+                    <li>
+                        <a href="#"><img src="image/jinxing.jpg" height="270" width="195" alt=""><span>金星脱口秀</span><span class="evaluate1"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/huajianghu.jpg" height="270" width="195" alt=""><span>画江湖灵主</span><span class="evaluate2"></span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/yunfu.jpg" height="100" width="195" alt=""><span class="little">列车上一孕妇将要早产 男列车长充当“接生婆”</span></a>
+                    </li>
+                    <li class="nogap">
+                        <a href="#"><img src="image/caiyingwen.jpg" height="100" width="195" alt=""><span class="little">蔡英文上台推“新南向政策” 欲经济上实现台独</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/jingxian.jpg" height="100" width="195" alt=""><span class="little">惊险！男子下车检查车况 躲过后方货车追尾</span></a>
+                    </li>
+                    <li class="nogap">
+                        <a href="#"><img src="image/shouru.jpg" height="100" width="195" alt=""><span class="little">高中毕业生携500元外出打工 10年后年入千万</span></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 购物 -->
+            <div class="mylove">
+                <ul class="shoplist">
+                    <li>
+                        <a href="#"><img src="image/gongju.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/shijin.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="image/jiche.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <!-- 返回顶部 -->
+    <a href="javascript:;" class="scrolltop">
+        <span class="back"></span>
+        <span class="totop">回到顶部</span>
+    </a>
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery.cookie.js"></script>
+    <script src="js/baidu.js"></script>
+</body>
+
+</html>
